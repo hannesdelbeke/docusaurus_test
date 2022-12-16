@@ -1,17 +1,17 @@
 name: Copy branches | main -> documentation 
 
-env:
-  GITHUB_USER: hannesdelbeke
-  GITHUB_REPO: notes
-  BRANCH_SOURCE: main
-  BRANCH_PUBLISH: documentation
-
+# env: this didn't work, see below for input
+  # GITHUB_USER: hannesdelbeke
+  # GITHUB_REPO: notes
+  # BRANCH_SOURCE: main
+  # BRANCH_PUBLISH: documentation
 
 # Controls when the action will run.
 on:
   # Triggers the workflow on push request events but only for the main branch
   push:
     branches: [main]
+    # inputs: TODO put variables in here for easier to config, see https://stackoverflow.com/questions/74072206
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,12 +27,12 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.ACTION_TOKEN  }}
-          src_branch: $BRANCH_SOURCE
+          src_branch: main
           src_path: /images/.
-          dst_owner: $GITHUB_USER
-          dst_repo_name: $GITHUB_REPO
+          dst_owner: hannesdelbeke
+          dst_repo_name: notes
           dst_path: /static/images/
-          dst_branch: $BRANCH_PUBLISH
+          dst_branch: documentation
           clean: true
           commit_message: "Images copied from main to documentation branch!"
 
@@ -45,12 +45,12 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.ACTION_TOKEN  }}
-          src_branch: $BRANCH_SOURCE
+          src_branch: main
           src_path: /sections/.
-          dst_owner: $GITHUB_USER  # what's this for?
-          dst_repo_name: $GITHUB_REPO  # what's this for?
+          dst_owner: hannesdelbeke  # what's this for?
+          dst_repo_name: notes  # what's this for?
           dst_path: /docs/
-          dst_branch: $BRANCH_PUBLISH
+          dst_branch: documentation
           clean: true
           commit_message: "Sections copied from main to documentation branch!"
 # copy-readme:
