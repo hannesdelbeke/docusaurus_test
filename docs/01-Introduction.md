@@ -1,9 +1,3 @@
----
-sidebar_label: Introduction 
-title: ' '
----
-
-
 
 Introduction
 ============
@@ -25,6 +19,8 @@ Introduction
 - [Who Companies Need](01-Introduction.md#who-companies-need)
 
 ## What is this Cookbook
+
+[[test]] test
 
 I get asked a lot:
 "What do you actually need to learn to become an awesome data engineer?"
