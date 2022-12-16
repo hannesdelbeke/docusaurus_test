@@ -1,4 +1,4 @@
-name: Copy from master to documentation branch
+name: Copy branches | main -> documentation 
 
 # Controls when the action will run.
 on:
@@ -20,14 +20,14 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.ACTION_TOKEN  }}
-          src_branch: master
-          src_path: /images/.
-          dst_owner: andkret
-          dst_repo_name: Cookbook
+          src_branch: main
+          src_path: /notes/images/.
+          dst_owner: hannesdelbeke  # what's this for?
+          dst_repo_name: notes  # what's this for?
           dst_path: /static/images/
           dst_branch: documentation
           clean: true
-          commit_message: "Images copied from master to documentation branch!"
+          commit_message: "Images copied from main to documentation branch!"
 
   copy-sections:
     runs-on: ubuntu-latest
@@ -38,14 +38,14 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.ACTION_TOKEN  }}
-          src_branch: master
-          src_path: /sections/.
-          dst_owner: andkret
-          dst_repo_name: Cookbook
+          src_branch: main
+          src_path: /notes/.
+          dst_owner: hannesdelbeke  # what's this for?
+          dst_repo_name: notes  # what's this for?
           dst_path: /docs/
           dst_branch: documentation
           clean: true
-          commit_message: "Sections copied from master to documentation branch!"
+          commit_message: "Sections copied from main to documentation branch!"
 # copy-readme:
 #   runs-on: ubuntu-latest
 #   steps:
@@ -54,10 +54,10 @@ jobs:
 #       uses: andstor/copycat-action@v3
 #       with:
 #         personal_token: ${{ secrets.PERSONAL_TOKEN  }}
-#         src_branch: master
+#         src_branch: main
 #         src_path: /README.md
 #         dst_owner: andkret
 #         dst_repo_name: Cookbook
 #         dst_path: /docs/
 #         dst_branch: documentation
-#         commit_message: "README.md copied from master to documentation branch!"
+#         commit_message: "README.md copied from main to documentation branch!"
