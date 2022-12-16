@@ -1,4 +1,4 @@
-name: Copy branches | main -> documentation 
+name: Copy branches main to documentation 
 
 # env: this didn't work, see below for input
   # GITHUB_USER: hannesdelbeke
@@ -47,12 +47,13 @@ jobs:
           personal_token: ${{ secrets.ACTION_TOKEN  }}
           src_branch: main
           src_path: /sections/.
-          dst_owner: hannesdelbeke  # what's this for?
-          dst_repo_name: notes  # what's this for?
+          dst_owner: hannesdelbeke
+          dst_repo_name: notes
           dst_path: /docs/
           dst_branch: documentation
           clean: true
           commit_message: "Sections copied from main to documentation branch!"
+          
 # copy-readme:
 #   runs-on: ubuntu-latest
 #   steps:
