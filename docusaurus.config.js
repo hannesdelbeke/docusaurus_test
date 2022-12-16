@@ -4,7 +4,7 @@ module.exports = {
   title: "DEV NOTES",
   tagline: "by HANNES D",
   url: "https://hannesdelbeke.github.io/",
-  baseUrl: "/notes", // path where website is available
+  baseUrl: "/notes/", // path where website is available
   favicon: "images/CookbookCover.jpg",
   organizationName: "Hannes", // GitHub org/user name.
   projectName: "Notes", // project name i.e repo name of project
