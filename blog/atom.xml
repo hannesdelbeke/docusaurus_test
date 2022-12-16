@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://cookbook.learndataengineering.com/blog</id>
-    <title>THE DATA ENGINEERING COOKBOOK Blog</title>
+    <id>https://hannesdelbeke.github.io/blog</id>
+    <title>DEV NOTES Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://cookbook.learndataengineering.com/blog"/>
-    <subtitle>THE DATA ENGINEERING COOKBOOK Blog</subtitle>
-    <icon>http://cookbook.learndataengineering.com/images/CookbookCover.jpg</icon>
+    <link rel="alternate" href="https://hannesdelbeke.github.io/blog"/>
+    <subtitle>DEV NOTES Blog</subtitle>
+    <icon>https://hannesdelbeke.github.io/images/CookbookCover.jpg</icon>
 </feed>
