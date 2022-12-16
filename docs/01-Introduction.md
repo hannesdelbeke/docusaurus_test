@@ -20,7 +20,7 @@ Introduction
 
 ## What is this Cookbook
 
-[[test]] test
+[test] test
 
 I get asked a lot:
 "What do you actually need to learn to become an awesome data engineer?"
