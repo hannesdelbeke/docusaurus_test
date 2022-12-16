@@ -21,7 +21,7 @@ jobs:
         with:
           personal_token: ${{ secrets.ACTION_TOKEN  }}
           src_branch: main
-          src_path: /notes/images/.
+          src_path: /images/.
           dst_owner: hannesdelbeke  # what's this for?
           dst_repo_name: notes  # what's this for?
           dst_path: /static/images/
