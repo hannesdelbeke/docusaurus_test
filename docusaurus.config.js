@@ -6,8 +6,8 @@ module.exports = {
   url: "https://hannesdelbeke.github.io/",
   baseUrl: "/notes/", // path where website is available
   favicon: "images/CookbookCover.jpg",
-  organizationName: "Hannes", // GitHub org/user name.
-  projectName: "Notes", // project name i.e repo name of project
+  organizationName: "hannesdelbeke", // GitHub org/user name.
+  projectName: "docusaurus_test", // project name i.e repo name of project
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   themeConfig: {
